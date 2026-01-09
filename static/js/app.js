@@ -1,4 +1,4 @@
-const API_BASE = "api";
+const API_BASE = "https://user-management-6o4y.onrender.com/api";
 
 function getToken() {
   return localStorage.getItem("access");
