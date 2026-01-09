@@ -1,15 +1,17 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Task Detail</title>
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/static/js/app.js"></script>
-    <script src="/static/js/task-detail.js"></script>
+    <script src="{% static "js/app.js" %}"></script>
+    <script src="{% static "js/task-detail.js" %}"></script>
   </head>
   <body>
     <div class="container">
