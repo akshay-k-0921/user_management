@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Task</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/add-task.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add Task</h2>
+
+      <form id="taskForm">
+        <label>Title</label>
+        <input id="title" required />
+
+        <label>Description</label>
+        <textarea id="desc" rows="4"></textarea>
+
+        <label>Attachment</label>
+        <input id="file" type="file" />
+
+        <div class="actions">
+          <button type="submit" id="saveBtn">Save</button>
+          <button type="button" onclick="window.location.href='/home/'">
+            Cancel
+          </button>
+        </div>
+      </form>
+
+      <p id="msg"></p>
+    </div>
+  </body>
+</html>

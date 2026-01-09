@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/profile.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h3>My Profile</h3>
+        <div>
+          <button onclick="window.location.href='/home/'">Home</button>
+          <button class="btn-danger" onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <label>Email</label>
+      <input id="email" readonly />
+
+      <label>Full Name</label>
+      <input id="full_name" />
+
+      <label>Date of Birth</label>
+      <input id="dob" type="date" />
+
+      <label>Address</label>
+      <textarea id="address" rows="5"></textarea>
+
+      <label>Gender</label>
+      <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Mobile Number</label>
+      <input id="mobile" />
+
+      <button id="saveBtn">Save Profile</button>
+      <button id="goResetPwdBtn">Reset Password</button>
+
+      <p id="msg"></p>
+    </div>
+  </body>
+</html>

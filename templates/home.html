@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/home.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h2>My Tasks</h2>
+        <div>
+          <button onclick="window.location.href='/profile/'">Profile</button>
+          <button class="btn-danger" onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <input id="search" placeholder="Search tasks..." />
+        <select id="order">
+          <option value="-created_at">Newest</option>
+          <option value="created_at">Oldest</option>
+          <option value="title">Title A–Z</option>
+          <option value="-title">Title Z–A</option>
+        </select>
+        <button id="filterBtn">Apply</button>
+      </div>
+
+      <button class="primary" onclick="window.location.href='/add-task/'">
+        Add Task
+      </button>
+
+      <ul id="taskList" class="task-list"></ul>
+
+      <div id="pagination" class="pagination"></div>
+    </div>
+  </body>
+</html>
